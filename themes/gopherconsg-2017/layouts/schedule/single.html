@@ -1,0 +1,59 @@
+{{ partial "default_head.html" . }}
+{{ partial "nav.html" . }}
+
+<div class="container">
+  <div class="row">
+    <article class="container-fluid article">
+      <h2 class="article-title">{{ .Title }}</h2>
+      <hr>
+      <div class="schedule-date-block">
+        {{ with .Site.Data.schedule.conference.date }}
+        <div class="schedule-day">{{ . }}</div>
+        {{ end }}
+        <hr>
+        <div class="schedule-event">{{ .Site.Data.schedule.conference.type }}</div>
+        {{ with .Site.Data.schedule.conference.subtitle }}<div class="schedule-notes">{{ . }}</div>{{ end }}
+      </div>
+      <div class="article-body" itemprop="articleBody">
+        <div class="timeline">
+        {{ range .Site.Data.schedule.conference.talks }}
+          <div class="timeline-block clearfix" id="{{ .fragmentid }}">
+            <div class="timeline-point"></div>
+            <div class="timeline-time col-xs-3">{{ .timerange }}</div>
+            <div class="timeline-event col-xs-offset-1 col-xs-8">
+              <h4 class="{{ .class }}">{{ .title }}</h4>
+              <div class="talk-block">
+                {{ with .talk }}
+                <p class="text-muted">{{ . | markdownify }}</p>
+                {{ end }}
+                {{ if and .profile .name }}
+                <div class="speaker-block">
+                  <div class="speaker-img-xs">
+                    <img src="../../img/{{ .profile }}" class="speaker-img-responsive center-block" alt="{{ .name }}">
+                  </div>
+                  <div class="speaker-bio-link"><a href="/speakers/#{{ .fragmentid }}">{{ .name }}</a></div>
+                </div>
+                {{ end }}
+                <div class="speaker-block">
+                {{ range .speakers }}
+                  <div class="speaker-mul">
+                  <div class="speaker-img-xs">
+                    <img src="../../img/{{ .profile }}" class="speaker-img-responsive center-block" alt="{{ .name }}">
+                  </div>
+                  <div class="speaker-bio-link"><a href="/speakers/#{{ .fragmentid }}">{{ .name }}</a></div>
+                  </div>
+                {{ end }}
+                </div>
+              </div>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </article>
+  </div>
+</div>
+
+{{ partial "footer.html" . }}
+
+{{ partial "js.html" . }}

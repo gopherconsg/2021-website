@@ -1,0 +1,34 @@
+{{ "<!-- NAVIGATION -->" | safeHTML }}
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid gopher-nav">
+        {{ "<!-- Brand and toggle get grouped for better mobile display -->" | safeHTML }}
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            {{ with .Site.Params.navigation.brand }}
+                <a class="navbar-brand" href="/">
+                    <picture title="{{ $.Site.Title }}">
+                        <!-- <source type="image/svg+xml" srcset="/img/{{ .svg }}"> -->
+                        <img src="/img/{{ .png }}" alt="{{ $.Site.Title }}">
+                    </picture>
+                </a>
+            {{ end }}
+        </div>
+        {{ "<!-- Collect the nav links, forms, and other content for toggling -->" | safeHTML }}
+        <div class="collapse navbar-collapse gopher-nav" id="bs-example-navbar-collapse-1">
+           <ul class="nav navbar-nav navbar-right">
+               {{ range .Site.Params.navigation.links }}
+                <li>
+                    <a href="{{ .link }}">{{ .title }}</a>
+                </li>
+                {{ end }}
+            </ul>
+        </div>
+        {{ "<!-- /.navbar-collapse -->" | safeHTML }}
+    </div>
+    {{ "<!-- /.container-fluid -->" | safeHTML }}
+</nav>

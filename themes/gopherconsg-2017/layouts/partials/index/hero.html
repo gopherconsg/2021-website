@@ -1,0 +1,30 @@
+{{ with $.Site.Data.index.hero }}
+{{ "<!-- HEADER -->" | safeHTML }}
+<header>
+    <div class="header-content">
+        <div class="header-content-inner">
+            <h4 class="cover-title">{{ .title }}</h4>
+            <div class="cover-img">
+                <picture title="{{ .logoname }}">
+                    <!-- <source type="image/svg+xml" srcset="/img/{{ .logoSVG }}"> -->
+                    <img class="img-responsive" src="/img/{{ .logoPNG }}" alt="{{ .logoname }}" width="300" height="300">
+                </picture>
+            </div>
+            {{ with .previous }}<h4 class="cover-subtitle">{{ .text }}</h4>
+                {{ range .assets }}
+                {{ with .youtube }}<div class="hero-video"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/{{ . }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>{{ end }}
+                {{ end }}
+            {{ end }}
+            {{ range .subtitle }}
+            <h4 class="cover-subtitle">{{ .text | markdownify }}</h4>
+            {{ end }}
+            <div class="hero-cta">
+                <a href="{{ .buttonlink }}" class="btn btn-primary btn-xl hero-btn">{{ .buttontext }}</a>
+                {{ if and .button2link .button2text }}
+                <a href="{{ .button2link }}" class="btn btn-primary btn-xl hero-btn" target="_blank">{{ .button2text }}</a>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</header>
+{{ end }}

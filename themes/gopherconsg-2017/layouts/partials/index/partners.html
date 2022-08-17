@@ -1,0 +1,68 @@
+{{ with $.Site.Data.partners }}
+{{ "<!-- PARTNERS -->" | safeHTML }}
+<section id="partners">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                {{ with .headline }}
+                <h2 class="section-heading">{{ . }}</h2>
+                {{ end }}
+                {{ if and .headline .description }}
+                <hr class="primary">
+                {{ end }}
+            </div>
+            <div class="col-lg-10 col-lg-offset-1 sponsor-logos">
+                {{ with .platinum }}
+                {{ with .title }}
+                <h3 class="sponsor-heading">{{ . }}</h3>
+                <hr class="sponsor-hr">
+                {{ end }}
+                <div class="platinum-sponsor-logos-row sponsor-row">
+                    {{ range .partners }}
+                    <img class="img-responsive platinum-sponsor-logos" {{ with .width }}style="max-width: {{ . }};"{{ end }} src="img/partners/{{ .logo }}" alt="{{ .name }}" title="{{ .name }}" />
+                    {{ end }}
+                </div>
+                {{ end }}
+                {{ with .gold }}
+                {{ with .title }}
+                <h3 class="sponsor-heading">{{ . }}</h3>
+                <hr class="sponsor-hr">
+                {{ end }}
+                <div class="gold-sponsor-logos-row sponsor-row">
+                    {{ range .partners }}
+                    <img class="img-responsive gold-sponsor-logos" {{ with .width }}style="max-width: {{ . }};"{{ end }} src="img/partners/{{ .logo }}" alt="{{ .name }}" title="{{ .name }}"  />
+                    {{ end }}
+                </div>
+                {{ end }}
+                {{ with .silver }}
+                {{ with .title }}
+                <h3 class="sponsor-heading">{{ . }}</h3>
+                <hr class="sponsor-hr">
+                {{ end }}
+                <div class="silver-sponsor-logos-row sponsor-row">
+                    {{ range .partners }}
+                    <img class="img-responsive silver-sponsor-logos" {{ with .width }}style="max-width: {{ . }};"{{ end }} src="img/partners/{{ .logo }}" alt="{{ .name }}" title="{{ .name }}" />
+                    {{ end }}
+                </div>
+                {{ end }}
+                {{ with .venue }}
+                {{ with .title }}
+                <h3 class="sponsor-heading">{{ . }}</h3>
+                <hr class="sponsor-hr">
+                {{ end }}
+                <div class="venue-sponsor-logos-row sponsor-row">
+                    {{ range .partners }}
+                    <img class="img-responsive venue-sponsor-logos" {{ with .width }}style="max-width: {{ . }};"{{ end }} src="img/partners/{{ .logo }}" alt="{{ .name }}" title="{{ .name }}" />
+                    {{ end }}
+                </div>
+                {{ end }}
+            </div>
+            <div class="col-lg-12 sponsor-invite-text text-center">
+                {{ with .description }}
+                    <p>{{ . | markdownify }}</p>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}

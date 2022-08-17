@@ -1,0 +1,18 @@
+{{ "<!-- TICKETS -->" | safeHTML }}
+<section id="tickets">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                {{ with .Site.Data.index.tickets.headline }}
+                <h2 class="section-heading">{{ . }}</h2>
+                {{ end }}
+                <hr class="primary">
+                <tito-widget event="gopherconsg/2019"></tito-widget>
+                <link rel="stylesheet" type="text/css" href='https://css.tito.io/v1.1' />
+                {{ with .Site.Data.index.tickets.policy }}
+                {{ . | markdownify }}
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
