@@ -1,6 +1,6 @@
-baseurl = "https://2022.gophercon.sg/"
+baseurl = "https://2023.gophercon.sg/"
 languageCode = "en-SG"
-title = "GopherCon Singapore 2022"
+title = "GopherCon Singapore 2023"
 theme = "gopherconsg-2017"
 
 [params]
