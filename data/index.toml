@@ -1,18 +1,15 @@
 [hero]
 title = "The Go programming language conference for Singapore and Southeast Asia."
 logoname = "GopherCon Singapore 2023"
-logoPNG = "gopherconsg2022-d.png"
-buttonlink = "https://gophercon.sg"
-buttontext = "See you in 2023!"
+logoPNG = "gopherconsg2023.png"
+buttonlink = "https://www.papercall.io/gopherconsg-2023"
+buttontext = "Propose a talk"
 
 [hero.subtitle.1]
-text = "**Postponed to October 2023**"
+text = "**Conference**<br />3 November"
 
 [hero.subtitle.2]
-text = "We want our attendees to have a great conference experience,"
-
-[hero.subtitle.3]
-text = "so we're giving ourselves more time to plan."
+text = "**Pre-conference Workshop**<br />2 November"
 
 [tickets]
 headline = "Tickets"

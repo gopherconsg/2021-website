@@ -1,5 +1,5 @@
 email = "hello@gophercon.sg"
 twitterURL = "https://twitter.com/gopherconsg"
 facebookURL = "https://www.facebook.com/GopherConSG"
-copyright = "Copyright &copy; GopherCon Singapore 2022.<br />GopherCon Singapore is run under the auspices of the [CU Society](https://cu.sg) (UEN: T18SS0020F)." 
+copyright = "Copyright &copy; GopherCon Singapore 2023.<br />GopherCon Singapore is run under the auspices of the [CU Society](https://cu.sg) (UEN: T18SS0020F)." 
 copyright2 = """The Gopher character is based on the Go mascot designed by Renee French and copyrighted under <a rel="license" href="http://creativecommons.org/licenses/by/3.0/us/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/3.0/us/80x15.png" /></a>"""

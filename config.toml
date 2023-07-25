@@ -6,8 +6,8 @@ theme = "gopherconsg-2017"
 [params]
 name = "GopherCon Singapore"
 description = "GopherCon Singapore is a Go programming language (Golang) conference in Southeast Asia."
-ogimage = "gopherconsg2022-og-d.png"
+ogimage = "gopherconsg2023.png"
 
 # Navigation
 [params.navigation.brand]
-png = "gopherconsg2022-long-d.png"
+png = "gopherconsg2023-long.png"
