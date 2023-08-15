@@ -11,3 +11,11 @@ ogimage = "gopherconsg2023.png"
 # Navigation
 [params.navigation.brand]
 png = "gopherconsg2023-long.png"
+
+[params.navigation.links.01]
+title = "Workshop"
+link = "/workshop"
+
+[params.navigation.links.99]
+title = "Get Your Tickets!"
+link = "/#tickets"

@@ -2,18 +2,26 @@
 title = "The Go programming language conference for Singapore and Southeast Asia."
 logoname = "GopherCon Singapore 2023"
 logoPNG = "gopherconsg2023.png"
-buttonlink = "https://www.papercall.io/gopherconsg-2023"
-buttontext = "Propose a talk"
+buttonlink = "#tickets"
+buttontext = "Get your tickets!"
+
+[hero.previous]
+text = "Check out what happened in previous years!"
+
+[hero.previous.assets.1]
+youtube = "Jpgqy8K6cyc"
 
 [hero.subtitle.1]
 text = "**Conference**<br />3 November"
 
 [hero.subtitle.2]
-text = "**Pre-conference Workshop**<br />2 November"
+text = "**[Ultimate Service Workshop](/workshops)**<br />2 November"
 
 [tickets]
 headline = "Tickets"
 policy = """
+### Refund policy
+We offer refunds for all requests made before Monday, 16 October 2023 (end-of-day Singapore time). There will be a 10% fee for all refunds to cover ticketing and payment processing costs.
 """
 
 [codeofconduct]

@@ -21,7 +21,7 @@
         {{ "<!-- Collect the nav links, forms, and other content for toggling -->" | safeHTML }}
         <div class="collapse navbar-collapse gopher-nav" id="bs-example-navbar-collapse-1">
            <ul class="nav navbar-nav navbar-right">
-               {{ range .Site.Params.navigation.links }}
+                {{ range .Site.Params.navigation.links }}
                 <li>
                     <a href="{{ .link }}">{{ .title }}</a>
                 </li>

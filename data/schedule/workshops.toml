@@ -1,0 +1,39 @@
+[0429-ultimatego]
+timerange = "9.00am to 5.30pm"
+title = "Ultimate Service with Kubernetes"
+date = "Thursday, 2 November 2023"
+venue = "to be confirmed"
+address = ""
+venueinfo = "Lunch and tea breaks will be provided."
+type = "Workshop"
+instructor = "William Kennedy"
+profile = "bill-kennedy.jpg"
+twitter = "https://twitter.com/goinggodotnet"
+bio = """William Kennedy is a managing partner at Ardan Labs in Miami, Florida, a mobile, web, and systems development company. Bill has written extensively on the Ardan Labs blog, has written two books, and has trained thousands of developers worldwide in Go. Bill is also a founding member of GoBridge, which is working to increase Go adoption through diversity."""
+# mapiframeurl = ""
+description = """This class teaches how to build production-level services in Go with a focus on macro-level engineering decisions. From the beginning you will program along with the instructor, walking through the design philosophies and guidelines used to engineer the code. With each new feature, you will learn more about the transition from programming to engineering and the points of refactoring required to write production-level applications. Throughout the class, Go modules and Kubernetes will be a focus. Everyone will be making better engineering decisions after this class.
+
+What a student is expected to learn:
+
+* Modules
+* Project Structure
+* Routing Basics
+* Web Framework
+* Middleware
+* Kubernetes
+* Business CRUD
+* Database Support
+* REST API
+
+Prerequisites:
+
+* Basic understanding of the Go programming language is recommended. Take the Go tour here: https://tour.golang.org/welcome/
+* Basic understanding of and comfort in working on the command line. Learn the command line here: https://www.codecademy.com/learn/learn-the-command-line
+
+Recommended Preparation:
+
+* Please clone the main repo for the class. github.com/ardanlabs/service
+* Please read the instructions in the makefile for installing everything prior to coming to class.
+* Please email the instructor for help, bill@ardanlabs.com 
+
+Computers should be capable of modern software development, such as access to install and run binaries, install a code editor, etc."""
