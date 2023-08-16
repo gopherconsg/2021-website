@@ -8,6 +8,9 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="{{ .Permalink }}" />
 {{ with .Site.Params.ogimage }}<meta property="og:image" content="{{ $.Site.BaseURL }}img/{{ . }}" />{{ end }}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ if ne .Page.Title .Site.Title }}{{ .Page.Title }} &mdash; {{ end }}{{ .Site.Title }}">
+{{ with .Site.Params.ogimage }}<meta name="twitter:image" content="{{ $.Site.BaseURL }}img/{{ . }}" />{{ end }}
 {{ .Hugo.Generator }}
 <title>{{ if ne .Page.Title .Site.Title }}{{ .Page.Title }} &mdash; {{ end }}{{ .Site.Title }}</title>
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
