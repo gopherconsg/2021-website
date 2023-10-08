@@ -5,17 +5,23 @@ logoPNG = "gopherconsg2023.png"
 buttonlink = "#tickets"
 buttontext = "Get your tickets!"
 
-[hero.previous]
-text = "Check out what happened in previous years!"
-
-[hero.previous.assets.1]
-youtube = "Jpgqy8K6cyc"
-
 [hero.subtitle.1]
-text = "**Conference**<br />3 November"
+text = "### **Conference**"
 
 [hero.subtitle.2]
-text = "**[Ultimate Service Workshop](/workshops)**<br />2 November"
+text = "3 November"
+
+[hero.subtitle.3]
+text = "JW Marriott Singapore Ballroom"
+
+[hero.subtitle.4]
+text = "### **[Pre-conference Workshop](/workshop)**"
+
+[hero.subtitle.5]
+text = "2 November"
+
+[hero.subtitle.6]
+text = "Developer Space @ Google Singapore"
 
 [tickets]
 headline = "Tickets"
